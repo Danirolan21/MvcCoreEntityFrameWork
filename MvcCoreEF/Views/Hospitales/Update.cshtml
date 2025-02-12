@@ -1,0 +1,18 @@
+﻿@model Hospital
+
+<h1 class="font-monospace"> Update </h1>
+
+<form method="post">
+	<input class="form-control" value="@Model.IdHospital" type="hidden" name="idHospital" />
+	<label class="form-label">Nombre: </label>
+	<input class="form-control" value="@Model.Nombre" type="text" name="nombre" />
+	<label class="form-label">Direccion: </label>
+	<input class="form-control" value="@Model.Direccion" type="text" name="direccion" />
+	<label class="form-label">Telefono: </label>
+	<input class="form-control" value="@Model.Telefono" type="text" name="telefono" />
+	<label class="form-label">Num Camas: </label>
+	<input class="form-control" value="@Model.Camas" type="text" name="camas" />
+	<button class="btn btn-dark mt-3">
+		Modificar Hospital
+	</button>
+</form>
